@@ -24,3 +24,22 @@ To run the built images:
 > docker-compose up
 ```
 
+## Compare
+
+Some basic initial comparisons can be performed using:
+
+```
+> docker stats
+```
+
+This shows output similar to:
+
+![docker stats](docker-stats.png)
+
+An initial observation is that the OpenJ9 container had a base memory footprint of 90iMB whereas Hotspot is 226MiB.
+
+## TODO
+
+- Introduce more containers
+- Perform comparisons under different types of load
+
