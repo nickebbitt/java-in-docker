@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  openjdk10-hotspot:
+    build: './openjdk10-hotspot'
+    ports:
+      - "8080:8080"
+  openjdk10-openj9:
+    build: './openjdk10-openj9'
+    ports:
+      - "8081:8080"
