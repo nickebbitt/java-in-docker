@@ -4,8 +4,6 @@ COPY . .
 
 RUN ./mvnw clean package
 
-RUN ls target
-
 FROM adoptopenjdk/openjdk10:latest AS runtime
 
 RUN mkdir /opt/app
